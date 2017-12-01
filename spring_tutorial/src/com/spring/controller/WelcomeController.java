@@ -10,6 +10,10 @@ public class WelcomeController {
 	@RequestMapping("/hello")
 	public ModelAndView hello() {
 		String msg = "Hello, World!";
+		
+		System.out.println("컨트롤러!!");
+		System.out.println(msg);
+		
 		return new ModelAndView("hello", "msg", msg);
 	}
 	
